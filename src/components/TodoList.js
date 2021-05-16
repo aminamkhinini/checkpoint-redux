@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 function TodoList() {
     let todos = useSelector(state=>state);
-    const filter = useSelector(state => state.filterreducer)
+    
     return (
         <div className="my-4">
             {todos.map((todo)=>   {

@@ -5,7 +5,6 @@ import { deleteTodo, updateTodo, toggleTodo } from '../redux/actions';
 function TodoItem({ todo }) {
     const [editable, setEditable] = useState(false)
     const [name, setName] = useState(todo.name)
-    const[isDone,setIsDone]=useState(todo.isDone)
     let dispatch = useDispatch();
 
     return (

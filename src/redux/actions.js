@@ -2,7 +2,6 @@ export const ADD_TODO = "ADD_TODO";
 export const DELETE_TODO = "DELETE_TODO";
 export const UPDATE_TODO = "UPDATE_TODO";
 export const FILTER_TODO = "FILTER_TODO";
-{/*export const IS_DONE = "IS_DONE";*/}
 export const TOGGLE_TODO = "TOGGLE_TODO";
 export function addTodo(todo) {
     return {
@@ -25,12 +24,7 @@ export function updateTodo(todo) {
         payload: todo,
     }
 }
-{/*export function isDone(todo) {
-    return {
-        type:IS_DONE,
-        payload: todo,
-    }
-}*/}
+
 export function toggleTodo (todoId) {
     return {
         type: TOGGLE_TODO, 
