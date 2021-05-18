@@ -35,6 +35,6 @@ export function toggleTodo (todoId) {
 export function filtertodo(filter) {
     return {
         type:FILTER_TODO,
-      filter,
+      payload:filter,
     }
 }
